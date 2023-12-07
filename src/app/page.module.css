@@ -1,0 +1,5 @@
+.container {
+    background-color: #355070;
+    position: relative;
+    z-index: 1; /* Valor menor que o z-index da Navbar */
+}

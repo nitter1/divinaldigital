@@ -1,0 +1,83 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: auto;
+    width: auto;
+    /* height: 100vh; */ /* Remova ou ajuste conforme necessário */
+}
+
+.title {
+    font-family: Roboto, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.main {
+    background-color: #355070;
+}
+
+.glowOnHover {
+    font-family: Poppins, Roboto, Helvetica, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    text-shadow: 2px 2px 2px #000;
+
+  }
+  
+  .glowOnHover:before {
+    content: '';
+    background: linear-gradient(45deg, #fff, #355070, #262661, #fff);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .glowOnHover:active {
+    color: transparent
+  }
+  
+  .glowOnHover:active:after {
+    background: transparent;
+  }
+  
+  .glowOnHover:hover:before {
+    opacity: 1;
+  }
+  
+  .glowOnHover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }

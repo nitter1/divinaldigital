@@ -1,0 +1,77 @@
+.container {
+    margin-top: -0.3em;
+    background-color: #ccc;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .title {
+    color: #fff;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #000;
+    position: relative;
+    bottom: 40%;
+  }
+  
+  .caption {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 8px;
+    text-align: center; /* Centraliza o texto */
+    text-shadow: 2px 2px 2px #000;
+  }
+  
+  .iconsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%; /* Ajuste conforme necessário */
+    max-width: 1200px; /* Adicione uma largura máxima para evitar que cresça indefinidamente */
+    position: absolute;
+  }
+  
+  .iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Utilizando uma porcentagem para ser relativo à largura do .iconsContainer */
+    max-width: 150px;
+    height: 100%; /* Igualando altura e largura para criar um círculo perfeito */
+    margin-bottom: 16px;
+    margin-top: 2em;
+    position: relative;
+  }
+  
+  .iconContent {
+    width: 100px;
+    height: 100px;
+    float: none;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    /*opacity: 1;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    background-color: #000;
+  }
+
+  .iconContent:hover {
+    background-color: #333;
+    color: #333;
+    cursor: pointer;
+  }
