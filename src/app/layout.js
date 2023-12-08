@@ -1,6 +1,6 @@
 import globalStyle from './globals.css';
 export const metadata = {
-  title: 'Rádio Sudoeste FM 96,9 - São Pedro da Aldeia, RJ',
+  title: 'Rádio IARD Digital - São Pedro da Aldeia, RJ',
   description: 'Desenvolvido por ',
 }
 

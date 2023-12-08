@@ -14,7 +14,7 @@ export default function Prog() {
           {/* Primeiro Ícone */}
           <div className={styles.iconContainer}>
             <div className={styles.iconContent}>
-              <Image src={manha} width={80} height={80} />
+              <Image src={manha} width={60} height={60} />
             </div>
             <p className={styles.caption}>Manhã Abençoada</p>
           </div>
@@ -22,7 +22,7 @@ export default function Prog() {
           {/* Segundo Ícone */}
           <div className={styles.iconContainer}>
             <div className={styles.iconContent}>
-              <Image src={tarde} width={80} height={80} />
+              <Image src={tarde} width={60} height={60} />
             </div>
             <p className={styles.caption}>Tarde Vitoriosa</p>
           </div>
@@ -30,7 +30,7 @@ export default function Prog() {
           {/* Terceiro Ícone */}
           <div className={styles.iconContainer}>
             <div className={styles.iconContent}>
-              <Image src={noite} width={80} height={80} />
+              <Image src={noite} width={60} height={60} />
             </div>
             <p className={styles.caption}>Noite Feliz</p>
           </div>
@@ -38,7 +38,7 @@ export default function Prog() {
           {/* Quarto Ícone */}
           <div className={styles.iconContainer}>
             <div className={styles.iconContent}>
-              <Image src={madrugada} width={80} height={80} />
+              <Image src={madrugada} width={60} height={60} />
             </div>
             <p className={styles.caption}>Madrugada</p>
           </div>

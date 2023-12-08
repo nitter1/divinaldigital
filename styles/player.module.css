@@ -1,0 +1,45 @@
+.containerEsq {
+    background-color: tomato;
+    width: 23vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 2vw 2vw 0;
+    float: left;
+}
+
+.containerDir {
+    background-color: #355070;
+    width: 100%;
+    width: 100vw;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    background-color: #355070;
+}
+
+.logo {
+    margin-top: 1em;
+}
+
+.navlat a:first-child {
+    border-top: 3px solid #262661;
+}
+
+.navlat a {
+    color: #262661;
+    display: block;
+    padding: 15px;
+    border-bottom: 3px solid #262661;;
+    font-size: 0.75vw;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+    text-decoration: none;
+    cursor: pointer;
+}
