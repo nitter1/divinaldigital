@@ -11,10 +11,11 @@ export default function ddPlay() {
   return (
     <>
 
-<link rel="stylesheet" href={Awesome}/>
+    <link rel="stylesheet" href={Awesome}/>
     <link rel="stylesheet" type="text/css" href={Animate}/>
     <link rel="stylesheet" href={Estilos}/>
     <Script src="../../public/play/js/script.js" />
+
       <div className="cover-site">
         <div id="bgCover" />
         <div className="bg-mask" />
