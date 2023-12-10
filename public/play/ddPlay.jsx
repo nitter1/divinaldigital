@@ -6,11 +6,24 @@ import { useState } from 'react';
 
 export default function ddPlay() {
 
+  const URL_STREAMING = 'YOUR_STREAMING_URL'; // Replace with your actual streaming URL
   const [isPlaying, setPlaying] = useState(false);
 
-  function togglePlay() {
-    const audio = new Audio(URL_STREAMING);
+  const audio = new Audio(URL_STREAMING);
 
+  audio.onplay = function () {
+    setPlaying(true);
+    // Your existing logic...
+  };
+
+  audio.onpause = function () {
+    setPlaying(false);
+    // Your existing logic...
+  };
+
+  // ... Other audio event listeners ...
+
+  const togglePlay = () => {
     if (isPlaying) {
       audio.pause();
     } else {
@@ -18,7 +31,9 @@ export default function ddPlay() {
     }
 
     setPlaying(!isPlaying);
-  }
+  };
+
+  // ... Rest of your component ...
 
   return (
     <>
