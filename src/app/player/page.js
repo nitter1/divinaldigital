@@ -9,9 +9,6 @@ import Playstore from 'public/assets/images/medias/playstore.png'
 import Image from "next/image";
 import Link from 'next/link'
 
-var __html = require('@/components/PlayerZeno.html');
-var template = { __html: __html };
-
 export default function Player() {
     
     return (
