@@ -289,14 +289,14 @@ document.getElementById('volume').oninput = function () {
     page.changeVolumeIndicator(this.value);
 }
 
-function togglePlay() {
+/*function togglePlay() {
     if (!audio.paused) {
         audio.pause();
     } else {
         audio.load();
         audio.play();
     }
-}
+}*/
 
 function volumeUp() {
     var vol = audio.volume;
