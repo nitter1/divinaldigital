@@ -3,26 +3,12 @@ import Animate from '../../public/play/css/animate.css'
 import Awesome from '../../public/play/css/font-awesome.min.css'
 import Script from 'next/script'
 import React, { useState, useEffect } from 'react';
-
-const URL_STREAMING = 'https://26583.live.streamtheworld.com/JBFMAAC.aac?dist=radios.com.br&1702';
-
 export default function ddPlay() {
 
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audio = new Audio(URL_STREAMING);
-
-  const togglePlay = () => {
-    if (audio.paused) {
-      audio.play();
-    } else {
-      audio.pause();
-    }
-    setIsPlaying(!isPlaying);
-  };
 
   return (
     <>
-
+      <Script src='./js/script.js'/>
       <link rel="stylesheet" href={Awesome} />
       <link rel="stylesheet" type="text/css" href={Animate} />
       <link rel="stylesheet" href={Estilos} />
@@ -64,10 +50,7 @@ export default function ddPlay() {
 
                         <div className="row">
                           <div className="play-pause col-12 col-md-6 text-center">
-                            <button className="btn-play" onClick={togglePlay}>
-                              <i id="playerButton" className={`fa ${isPlaying ? 'fa-pause' : 'fa-play'}`} />
-                              <span id="buttonPlay">{isPlaying ? 'PAUSE' : 'PLAY'}</span>
-                            </button>
+                          <button  className="btn-play" onclick="togglePlay()"><i id="playerButton" className="fa fa-play"></i> <span id="buttonPlay">PLAY</span></button>
                           </div>
                         </div>
                         <div className="row">
@@ -170,7 +153,6 @@ export default function ddPlay() {
           </div>
         </div>
       </div>
-      <Script src='../play/js/script.js' />
     </>
 
   )
