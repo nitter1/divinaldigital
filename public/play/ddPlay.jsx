@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 export default function ddPlay() {
 
-  const URL_STREAMING = 'YOUR_STREAMING_URL'; // Replace with your actual streaming URL
+  const URL_STREAMING = 'https://26583.live.streamtheworld.com/JBFMAAC.aac?dist=radios.com.br&1702'; // Replace with your actual streaming URL
   const [isPlaying, setPlaying] = useState(false);
 
   const audio = new Audio(URL_STREAMING);
