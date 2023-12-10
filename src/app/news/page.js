@@ -5,7 +5,7 @@ import NewsItem from '@/components/NewsItem';
 import styles from 'styles/news.module.css'
 import Link from 'next/link'
 
-const newList = () => {
+export default function NewList() {
     const [articles, setArticles] = useState([])
 
     useEffect( () => {
@@ -43,5 +43,3 @@ const newList = () => {
     </>
     )
 }
-
-export default newList
