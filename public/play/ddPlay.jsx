@@ -49,7 +49,7 @@ export default function ddPlay() {
                        
                         <div className="row">
                           <div className="play-pause col-12 col-md-6 text-center">
-                          <button className="btn-play" onClick={togglePlay}>
+                          <button className="btn-play" onClick='togglePlay()'>
                               <i id="playerButton" className="fa fa-play" />{" "}
                               <span id="buttonPlay">PLAY</span>
                             </button>
