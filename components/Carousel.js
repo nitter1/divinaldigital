@@ -1,44 +1,49 @@
 'use client'
-// Utilize "import SwiperCore" apenas uma vez, no início do arquivo
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper';
-import Image from 'next/image';
 
-// Importe os estilos do Swiper
+import { register } from 'swiper/element/bundle'
+import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper';
+import Img1 from '../public/assets/images/DSC8936.jpg'
+import Img2 from '../public/assets/images/user_1004769020.jpg'
+SwiperCore.use([Pagination, Navigation, Autoplay]);
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
-// Use SwiperCore.use para adicionar os módulos necessários
-SwiperCore.use([Pagination, Navigation, Autoplay]);
+import {Swiper, SwiperSlide} from 'swiper/react'
+import Image from 'next/image';
 
 export default function Carousel() {
-  const data = [
-    { id: '1', image: 'https://pmspa.rj.gov.br/wp-content/uploads/2023/08/DSC8936.jpg' },
-    { id: '2', image: 'https://spaceks.net/sites/sudoestefm.com.br/images/slider/user_1004769020.jpg' },
-  ];
+  const imagens = [Img1, Img2];
 
-  return (
-    <>
-      <Swiper
+
+
+  const data = [
+    { id: '1', image: imagens[0] },
+    { id: '2', image: imagens[1] }
+];
+
+
+    return(
+        <>
+        <Swiper
         slidesPerView={1}
-        pagination={{ clickable: true }}
+        pagination={{ clickable: true}}
         navigation
         loop={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         style={{ zIndex: 0 }}
-      >
-        {data.map((item) => (
-          <SwiperSlide key={item.id}> {/* Adicione a chave (key) para resolver o erro de "react/jsx-key" */}
-            <Image
-              src={item.image}
-              alt='Slider'
-              style={{ width: '100%', height: '90vh', objectFit: 'cover', WebkitBackgroundSize: 'cover' }}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </>
-  );
+        >
+        {data.map( (item) => (
+           <SwiperSlide key={item.id}>
+           <Image
+               src={item.image}
+               alt='Slider'
+               style={{ width: '100%', height: '90vh', objectFit: 'cover' }}
+           />
+       </SwiperSlide>
+        ) )}
+        </Swiper>
+        </>
+    )
 }
