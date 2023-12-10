@@ -40,7 +40,7 @@ export default function Player() {
                 </section>
 
                 <section className={styles.containerDir}>
-                <iframe src="https://zeno.fm/player/radio-iard-digital" width="768" height="600" frameborder="0" scrolling="no"></iframe><a href="https://zeno.fm/" target="_blank" style="display: block; font-size: 0.9em; line-height: 10px;">A Zeno.FM Station</a>
+                <iframe src="https://zeno.fm/player/radio-iard-digital" width="768" height="500" frameborder="0" scrolling="no"></iframe><a href="https://zeno.fm/" target="_blank" style={{ display: 'block', fontSize: '0.9em', lineHeight: '10px' }}></a>
                 </section>
             </main>
 
