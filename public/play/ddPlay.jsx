@@ -8,7 +8,7 @@ export default function ddPlay() {
 
   return (
     <>
-      <Script src='./js/script.js'/>
+      <Script src='../play/js/script.js'/>
       <link rel="stylesheet" href={Awesome} />
       <link rel="stylesheet" type="text/css" href={Animate} />
       <link rel="stylesheet" href={Estilos} />
