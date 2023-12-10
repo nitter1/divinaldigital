@@ -7,8 +7,10 @@ import Youtube from 'public/assets/images/medias/youtube.svg'
 import Appstore from 'public/assets/images/medias/appstore.png'
 import Playstore from 'public/assets/images/medias/playstore.png'
 import Image from "next/image";
-import Play from '../../../public/play/ddPlay.jsx'
 import Link from 'next/link'
+
+var __html = require('@/components/PlayerZeno.html');
+var template = { __html: __html };
 
 export default function Player() {
     
@@ -41,7 +43,7 @@ export default function Player() {
                 </section>
 
                 <section className={styles.containerDir}>
-                    <Play />
+                <div dangerouslySetInnerHTML={template} />
                 </section>
             </main>
 
