@@ -1,36 +1,50 @@
 'use client'
-import React from 'react';
 import styles from 'styles/player.module.css';
 import Logo from 'public/assets/images/iurd.jpg'
+import Facebook from 'public/assets/images/medias/facebook.svg'
+import Instagram from 'public/assets/images/medias/instagram.svg'
+import Youtube from 'public/assets/images/medias/youtube.svg'
+import Appstore from 'public/assets/images/medias/appstore.png'
+import Playstore from 'public/assets/images/medias/playstore.png'
 import Image from "next/image";
-
+import Play from '../../../public/play/ddPlay.jsx'
 
 export default function Player() {
-    return(
+    
+    return (
+
         <>
-        <main className={styles.main}>
-            <section> 
-                <div className={styles.containerEsq}>
-                    <Image className={styles.logo} src={Logo} alt="Logotipo" width={120} height={100} />
+            <main className={styles.main}>
+                <section className={styles.background}>
+                    <div className={styles.containerEsq}>
+                        <div className={styles.innerContainerEsq}>
+                            <Image className={styles.logo} src={Logo} alt="Logotipo" width={75} height={50} />
 
-                    <nav className={styles.navlat}>
-                    <a href="https://www.melodia.com.br" target="_blank">Ir para o site</a>
-                    <a href="https://www.melodia.com.br/pesquisa-musical-71" target="_blank">Peça sua música</a>
-                    <a href="https://www.melodia.com.br/programas" target="_blank">Programas</a>
-                    <a href="https://www.melodia.com.br/#contacts" target="_blank">Entre em contato</a>
+                            <nav className={styles.navlat}>
+                                <a href="https://www.melodia.com.br" target="_blank">Ir para o site</a>
+                                <a href="https://www.melodia.com.br/pesquisa-musical-71" target="_blank">Peça sua música</a>
+                                <a href="https://www.melodia.com.br/programas" target="_blank">Programas</a>
+                                <a href="https://www.melodia.com.br/#contacts" target="_blank">Entre em contato</a>
+                            </nav>
+                            <div className={styles.media}>
+                                <a href="#" target="_blank"><Image src={Facebook} alt="Facebook Icon" /></a>
+                                <a href="#" target="_blank"><Image src={Instagram} alt="Instagram Icon" /></a>
+                                <a href="#" target="_blank"><Image src={Youtube} alt="Youtube Icon" /></a>
+                            </div>
+                            <div className={styles.apps}>
+                                <a href="#" target="_blank"><Image src={Playstore} alt="Playstore Badge" width={85} height={26} /></a>
+                                <a href="#" target="_blank"><Image src={Appstore} alt="Appstore Badge" width={85} height={26} /></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                    </nav>
+                <section className={styles.containerDir}>
+                    <Play />
+                </section>
+            </main>
 
-                    <div className="media">FACEBOOK INSTAGRAM - YT</div>
-                    <div className="apps">BAIXE O APP IARD</div>
-                </div>
-            </section>
-            
-            <section className={styles.containerDir}>
-            { /* player */ }
-            <h1>section do player</h1>
-            </section>
-        </main>
+
         </>
     )
 }
