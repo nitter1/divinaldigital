@@ -290,10 +290,11 @@ document.getElementById('volume').oninput = function () {
 }
 
 function togglePlay() {
-    if (audio.pause) {
-        audio.play();
-    } else {
+    if (!audio.paused) {
         audio.pause();
+    } else {
+        audio.load();
+        audio.play();
     }
 }
 
