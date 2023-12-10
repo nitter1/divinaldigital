@@ -2,8 +2,23 @@ import Estilos from '../../public/play/css/style.css'
 import Animate from '../../public/play/css/animate.css'
 import Awesome from '../../public/play/css/font-awesome.min.css'
 import Script from 'next/script'
+import { useState } from 'react';
 
 export default function ddPlay() {
+
+  const [isPlaying, setPlaying] = useState(false);
+
+  function togglePlay() {
+    const audio = new Audio(URL_STREAMING);
+
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+
+    setPlaying(!isPlaying);
+  }
 
   return (
     <>
