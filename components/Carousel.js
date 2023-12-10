@@ -1,7 +1,7 @@
 'use client'
 
 import { register } from 'swiper/element/bundle'
-import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper';
+import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper/core';
 import Img1 from '../public/assets/images/DSC8936.jpg'
 import Img2 from '../public/assets/images/user_1004769020.jpg'
 SwiperCore.use([Pagination, Navigation, Autoplay]);
