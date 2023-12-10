@@ -6,7 +6,7 @@ const RADIO_NAME = 'RADIO';
 var API_SERVICE = 'DEEZER';
 
 // Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR and any other stream service.
-const URL_STREAMING = 'http://s6.myradiostream.com:48910/';
+const URL_STREAMING = 'https://stream.zeno.fm/pcozlw1egbduv';
 
 //API URL / if you use MEDIA CP, CHANGE THIS TO : https://api.streamafrica.net/metadata/mediacp.php?url='+MEDIACP_JSON_URL
 const API_URL = 'https://api.streamafrica.net/metadata/index?z='+URL_STREAMING
