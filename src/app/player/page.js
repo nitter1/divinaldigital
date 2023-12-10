@@ -8,6 +8,7 @@ import Appstore from 'public/assets/images/medias/appstore.png'
 import Playstore from 'public/assets/images/medias/playstore.png'
 import Image from "next/image";
 import Play from '../../../public/play/ddPlay.jsx'
+import Link from 'next/link'
 
 export default function Player() {
     
@@ -21,7 +22,7 @@ export default function Player() {
                             <Image className={styles.logo} src={Logo} alt="Logotipo" width={75} height={50} />
 
                             <nav className={styles.navlat}>
-                                <a href="https://www.melodia.com.br" target="_blank">Ir para o site</a>
+                            <Link href="/">Ir para o site</Link>
                                 <a href="https://www.melodia.com.br/pesquisa-musical-71" target="_blank">Peça sua música</a>
                                 <a href="https://www.melodia.com.br/programas" target="_blank">Programas</a>
                                 <a href="https://www.melodia.com.br/#contacts" target="_blank">Entre em contato</a>
