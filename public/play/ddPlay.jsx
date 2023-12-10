@@ -1,8 +1,7 @@
 import Estilos from '../../public/play/css/style.css'
 import Animate from '../../public/play/css/animate.css'
 import Awesome from '../../public/play/css/font-awesome.min.css'
-import Script from "next/script"
-
+import Script from 'next/script'
 
 export default function ddPlay() {
 
@@ -12,8 +11,6 @@ export default function ddPlay() {
     <link rel="stylesheet" href={Awesome}/>
     <link rel="stylesheet" type="text/css" href={Animate}/>
     <link rel="stylesheet" href={Estilos}/>
-    <Script src="../../public/play/js/script.js" />
-
       <div className="cover-site">
         <div id="bgCover" />
         <div className="bg-mask" />
@@ -158,6 +155,7 @@ export default function ddPlay() {
           </div>
         </div>
       </div>
+      <Script src="/play/js/script.js" />
     </>
 
   )
