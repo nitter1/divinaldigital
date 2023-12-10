@@ -2,7 +2,7 @@ import globalStyle from './globals.css';
 
 
 export const metadata = {
-  title: 'Rádio IARD Digital - São Pedro da Aldeia, RJ',
+  title: 'Rádio DIVINAL Digital',
   description: 'Desenvolvido por ',
 }
 
