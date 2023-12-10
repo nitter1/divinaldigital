@@ -1,5 +1,3 @@
-import React from "react"
-import { useEffect } from "react"
 import Estilos from '../../public/play/css/style.css'
 import Animate from '../../public/play/css/animate.css'
 import Awesome from '../../public/play/css/font-awesome.min.css'

@@ -2,6 +2,7 @@
 // Utilize "import SwiperCore" apenas uma vez, no início do arquivo
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination, Navigation, Autoplay } from 'swiper';
+import Image from 'next/image';
 
 // Importe os estilos do Swiper
 import 'swiper/css';
@@ -30,7 +31,7 @@ export default function Carousel() {
       >
         {data.map((item) => (
           <SwiperSlide key={item.id}> {/* Adicione a chave (key) para resolver o erro de "react/jsx-key" */}
-            <img
+            <Image
               src={item.image}
               alt='Slider'
               style={{ width: '100%', height: '90vh', objectFit: 'cover', WebkitBackgroundSize: 'cover' }}
