@@ -1,6 +1,6 @@
 'use client'
 import styles from 'styles/player.module.css';
-import Logo from 'public/assets/images/iurd.jpg'
+import Logo from 'public/assets/images/LOGO2.png'
 import Facebook from 'public/assets/images/medias/facebook.svg'
 import Instagram from 'public/assets/images/medias/instagram.svg'
 import Youtube from 'public/assets/images/medias/youtube.svg'
@@ -18,7 +18,7 @@ export default function Player() {
                 <section className={styles.background}>
                     <div className={styles.containerEsq}>
                         <div className={styles.innerContainerEsq}>
-                            <Image className={styles.logo} src={Logo} alt="Logotipo" width={75} height={50} />
+                            <Image className={styles.logo} src={Logo} alt="Logotipo" width={150} height={90} />
 
                             <nav className={styles.navlat}>
                             <Link href="/">Ir para o site</Link>
