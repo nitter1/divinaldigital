@@ -40,7 +40,7 @@ export default function Player() {
                 </section>
 
                 <section className={styles.containerDir}>
-                <iframe src="https://zeno.fm/player/radio-divinal-digital" width="768" height="500" frameborder="0" scrolling="no"></iframe><a href="https://zeno.fm/" target="_blank" style={{ display: 'block', fontSize: '0.9em', lineHeight: '10px' }}></a>
+                <iframe src="https://player.srvsh.com.br/player-web/8024" frameborder="0" width="100%" height="465"></iframe>
                 </section>
             </main>
 
