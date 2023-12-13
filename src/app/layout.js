@@ -3,7 +3,7 @@ import globalStyle from './globals.css';
 
 export const metadata = {
   title: 'Rádio DIVINAL Digital',
-  description: 'Desenvolvido por ',
+  description: 'Desenvolvido por Nitter Solutions',
 }
 
 export default function RootLayout({ children }) {
