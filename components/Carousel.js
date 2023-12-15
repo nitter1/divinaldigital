@@ -23,7 +23,8 @@ export default function Carousel() {
     { id: '2', image: imagens[1] }
 ];
 
-
+         // Verifica o tamanho da tela antes de renderizar o Carousel
+         if (typeof window !== 'undefined' && window.innerWidth > 1000)
     return(
         <>
         <Swiper

@@ -10,40 +10,39 @@ export default function Prog() {
  <section className={styles.container}>
         <h1 className={styles.title}>Programação</h1>
 
+          
         <div className={styles.iconsContainer}>
-          {/* Primeiro Ícone */}
-          <div className={styles.iconContainer}>
+          {/* Primeiro e Segundo Ícone em cima */}
+          <div className={`${styles.iconsRow} ${styles.iconContainer}`}>
             <div className={styles.iconContent}>
-              <Image src={manha} width={60} height={60} alt='MANHÃ'/>
+              <Image src={manha} width={60} height={60} alt='MANHÃ' />
             </div>
             <p className={styles.caption}>Manhã</p>
           </div>
 
-          {/* Segundo Ícone */}
-          <div className={styles.iconContainer}>
+          <div className={`${styles.iconsRow} ${styles.iconContainer}`}>
             <div className={styles.iconContent}>
-              <Image src={tarde} width={60} height={60} alt='TARDE'/>
+              <Image src={tarde} width={60} height={60} alt='TARDE' />
             </div>
             <p className={styles.caption}>Tarde</p>
           </div>
 
-          {/* Terceiro Ícone */}
-          <div className={styles.iconContainer}>
+          {/* Terceiro e Quarto Ícone embaixo */}
+          <div className={`${styles.iconsRow} ${styles.iconContainer}`}>
             <div className={styles.iconContent}>
-              <Image src={noite} width={60} height={60} alt='NOITE'/>
+              <Image src={noite} width={60} height={60} alt='NOITE' />
             </div>
             <p className={styles.caption}>Noite</p>
           </div>
 
-          {/* Quarto Ícone */}
-          <div className={styles.iconContainer}>
+          <div className={`${styles.iconsRow} ${styles.iconContainer}`}>
             <div className={styles.iconContent}>
               <Image src={madrugada} width={60} height={60} alt='MADRUGADA' />
             </div>
             <p className={styles.caption}>Madrugada</p>
           </div>
         </div>
-      </section>
+        </section>
         </>
     )
 }

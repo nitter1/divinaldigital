@@ -100,3 +100,30 @@
     transition: 1.5s;
     color: #666;
 }
+
+@media only screen and (max-width: 1000px) {
+    .container {
+      width: 100%;
+    }
+
+    .logoMain {
+        display: none;
+    }
+
+    .footerMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pFooter {
+        text-align: center;
+        width: 100%;
+    }
+  }

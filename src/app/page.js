@@ -23,7 +23,7 @@ export default function Home() {
               <p className={styles.paragraph}>A rádio Divinal Digital, pioneira na transmissão totalmente digital (via streaming) no bairro de Campo Redondo, em São Pedro da Aldeia, RJ, foi fundada em dezembro de 2023 por Roger Nitter, locutor, produtor de áudio e empreendedor com mais de 10 anos de experiência em locução publicitária. Anteriormente, Roger Nitter foi proprietário da Áudio Delta Produções, um estúdio de produção de áudio operante de 2008 a 2019, situado na zona norte da capital do Rio de Janeiro.
               <br /><br/>
 A missão da rádio Divinal Digital, além de ser uma rádio digital (streaming), é difundir a palavra de Deus e o evangelho de nosso Senhor e Salvador Jesus Cristo por meio de pregações, louvores e adorações. Além disso, a rádio proporciona entretenimento, informação e conexão, desempenhando diversas funções essenciais:</p>
-<br /><br /><br /><br /><br /><br /><br /><Image src={Radio} width={350} height={300} />
+<br /><br /><br /><br /><br /><br /><br /><Image src={Radio} width={350} height={300} className={styles.logoMain} />
             </div>
 
             <div className={styles.divSecMain2}>
@@ -42,7 +42,7 @@ A missão da rádio Divinal Digital, além de ser uma rádio digital (streaming)
           </section>
           {/*<section className={styles.secMainLogo}></section>*/}
         </main>
-        <footer>
+        <footer className={styles.footerMain}>
           <div className={styles.footerContainer}><p className={styles.pFooter}>Todos os direitos reservados © 2023 Desenvolvido por: <Link className={styles.nitter} href="https://danielnitter.netlify.app/" target="_blank">Nitter Solutions</Link></p>
           </div>
           
