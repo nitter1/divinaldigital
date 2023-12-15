@@ -16,7 +16,7 @@ export default function Prog() {
             <div className={styles.iconContent}>
               <Image src={manha} width={60} height={60} alt='MANHÃ'/>
             </div>
-            <p className={styles.caption}>Manhã Abençoada</p>
+            <p className={styles.caption}>Manhã</p>
           </div>
 
           {/* Segundo Ícone */}
@@ -24,7 +24,7 @@ export default function Prog() {
             <div className={styles.iconContent}>
               <Image src={tarde} width={60} height={60} alt='TARDE'/>
             </div>
-            <p className={styles.caption}>Tarde Vitoriosa</p>
+            <p className={styles.caption}>Tarde</p>
           </div>
 
           {/* Terceiro Ícone */}
@@ -32,7 +32,7 @@ export default function Prog() {
             <div className={styles.iconContent}>
               <Image src={noite} width={60} height={60} alt='NOITE'/>
             </div>
-            <p className={styles.caption}>Noite Feliz</p>
+            <p className={styles.caption}>Noite</p>
           </div>
 
           {/* Quarto Ícone */}
