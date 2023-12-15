@@ -57,24 +57,18 @@ cursor: pointer;
     float: right;
     margin-top: 4px;
     margin-left: 4px;
-    animation-name: nomeDaAnimacao;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
     position: relative;
-    right: 20px;
+    right: 35px;
+    -webkit-animation: bola .7s linear infinite;
+    -moz-animation: bola .7s linear infinite;
+    -ms-animation: bola .7s linear infinite;
+    -o-animation: bola .7s linear infinite;
+    animation: bola .7s linear infinite;
 }
 
-@keyframes nomeDaAnimacao {
-    0% {
-      /* Estilo inicial */
-      transform: scale(1);
-    }
-    50% {
-      /* Estilo no meio da animação, se aplicável */
-    }
-    100% {
-      /* Estilo final */
-      transform: scale(1.5);
-    }
+@keyframes bola {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
   }
+
