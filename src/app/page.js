@@ -5,6 +5,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import Radio from '../../public/assets/images/LOGO2.png'
 import Link from 'next/link'
+import FooterSite from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -42,11 +43,7 @@ A missão da rádio Divinal Digital, além de ser uma rádio digital (streaming)
           </section>
           {/*<section className={styles.secMainLogo}></section>*/}
         </main>
-        <footer className={styles.footerMain}>
-          <div className={styles.footerContainer}><p className={styles.pFooter}>Todos os direitos reservados © 2023 Desenvolvido por: <Link className={styles.nitter} href="https://danielnitter.netlify.app/" target="_blank">Nitter Solutions</Link></p>
-          </div>
-          
-        </footer>
+        <FooterSite />
       </div>
     </>
   )

@@ -1,0 +1,50 @@
+.footerContainer {
+    background-color: #262661;
+    color: white;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pFooter {
+    font-family: 'Afacad', sans-serif;
+    font-size: 1.3em;
+}
+
+.nitter {
+    text-decoration: none;
+    color: white;
+    font-family: 'Afacad', sans-serif;
+}
+
+.nitter:hover {
+    transition: 1.5s;
+    color: #666;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .footerMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .pFooter {
+        text-align: center;
+        width: 100%;
+    }
+  }
