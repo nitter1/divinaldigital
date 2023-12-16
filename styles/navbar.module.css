@@ -50,6 +50,29 @@ color: black;
 cursor: pointer;
 }
 
+.bola {
+  background-color: #b92121;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  float: right;
+  margin-top: 4px;
+  margin-left: 4px;
+  position: relative;
+  right: 35px;
+  -webkit-animation: bola .7s linear infinite;
+  -moz-animation: bola .7s linear infinite;
+  -ms-animation: bola .7s linear infinite;
+  -o-animation: bola .7s linear infinite;
+  animation: bola .7s linear infinite;
+}
+
+@keyframes bola {
+0% { opacity: 0; }
+50% { opacity: 0.5; }
+100% { opacity: 1; }
+}
+
 
 /* Style the links inside the navigation bar */
 .topnav a {

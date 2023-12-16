@@ -22,7 +22,7 @@ export default function Navbar() {
         <Image className={styles.image} src={Logo} alt="Logotipo Rádio Divinal Digital" />
         <ul className={styles.ulNav}>
         <Link href="/" className={`${styles.liHome} ${styles.active}`}>INICIO</Link>
-          <Link className={styles.li} href="/player"> AO VIVO </Link>
+          <Link className={styles.li} href="/player"> NO AR <div className={styles.bola}></div> </Link>
           <Link className={styles.li} href="/programacao">PROGRAMAÇÃO</Link>
           <Link className={styles.li} href="/news">NOTÍCIAS</Link>
           <Link className={styles.li} href="/promocoes">PROMOÇÕES</Link>
