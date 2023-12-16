@@ -5,7 +5,7 @@
     z-index: 2; /* Valor maior que o z-index dos elementos abaixo */
   display: flex;
   justify-content: space-between;
-
+  height: 20vh;
 }
 
 .ulNav {
@@ -59,7 +59,6 @@ cursor: pointer;
   margin-top: 4px;
   margin-left: 4px;
   position: relative;
-  right: 35px;
   -webkit-animation: bola .7s linear infinite;
   -moz-animation: bola .7s linear infinite;
   -ms-animation: bola .7s linear infinite;
