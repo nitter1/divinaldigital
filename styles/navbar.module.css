@@ -17,8 +17,8 @@
 
 .image {
   margin: 0.8em;
-  width: 30vw;
-  height: 15vh;
+  width: 10vw;
+  height: auto;
 }
 
 .liHome {
@@ -123,6 +123,12 @@ cursor: pointer;
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .image {
+    margin: 0.8em;
+    width: 30vw;
+    height: 15vh;
   }
 
 }
