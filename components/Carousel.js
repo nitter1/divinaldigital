@@ -24,7 +24,7 @@ export default function Carousel() {
 ];
 
          // Verifica o tamanho da tela antes de renderizar o Carousel
-         if (typeof window !== 'undefined' && window.innerWidth > 1000)
+         if (typeof window !== 'undefined' && window.innerWidth > 768)
     return(
         <>
         <Swiper
