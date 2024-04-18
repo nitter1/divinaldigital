@@ -4,7 +4,7 @@ h1{position:absolute;top:-12px;left:50%;margin-right:-50%;transform:translate(-5
 
 #player {margin:0px auto;width:100%;height:100%;}
 
-.background_hora{width:196px;height:46px;background-color:#fff;position:absolute;right:20px;bottom:100px;border-radius:50px}
+.background_hora{width:196px;height:46px;background-color:#fff;position:absolute;right:20px;bottom:50px;border-radius:50px}
 #relogio{margin:0;position:absolute;top:50%;left:50%;margin-right:-50%;transform:translate(-50%,-50%);font-size:30px;font-family:"Poppins",sans-serif;color:red}
 
 .back-to-top{position:fixed;display:none;width:40px;height:40px;border-radius:50px;right:15px;bottom:15px;background:#3a0d5c;color:#fff;transition:display .5s ease-in-out;z-index:99999}
