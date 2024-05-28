@@ -118,37 +118,33 @@
             
             <div class="box-artigo">
                 
-            <div class="formularioContato">
-                
-                <form action="https://formsubmit.co/50a1546b8f8b3d162a6c85f5fe2dea9f" method="post" enctype="multipart/form-data">
-
-                    <label>
-                        <span><i class="icon icon-user-1"></i> Nome</span>
-                        <input type="text" name="nome" required="">
-                    </label>
-                    
-                    <label>
-                        <span><i class="icon icon-email"></i> E-mail</span>
-                        <input type="text" name="email" class="fade_8S">
-                    </label>
-
-                    <label>
-                        <span><i class="icon icon-flag"></i> Assunto</span>
-                        <input type="text" name="assunto" required="">
-                    </label>
-                    
-                    <label>
-                        <span><i class="icon icon-comment"></i> Mensagem</span>
-                         <textarea name="mensagem" rows="3" required=""></textarea> 
-                    </label>
-                   
-                    <input type="hidden" name="acao" value="enviar" />
-                    <button class="btn-envia" title="Enviar"><b class="icon icon-paper-plane-o"> Enviar</b></button>
-
-                
-                </form>
-
-            </div><!--Formulario Contato-->
+				<div class="formularioContato">
+					<form id="contactForm">
+						<label>
+							<span><i class="icon icon-user-1"></i> Nome</span>
+							<input type="text" name="nome" required="">
+						</label>
+						
+						<label>
+							<span><i class="icon icon-email"></i> E-mail</span>
+							<input type="text" name="email" class="fade_8S" required="">
+						</label>
+				
+						<label>
+							<span><i class="icon icon-flag"></i> Assunto</span>
+							<input type="text" name="assunto" required="">
+						</label>
+						
+						<label>
+							<span><i class="icon icon-comment"></i> Mensagem</span>
+							<textarea name="mensagem" rows="3" required=""></textarea> 
+						</label>
+					   
+						<input type="hidden" name="acao" value="enviar" />
+						<button type="submit" class="btn-envia" title="Enviar"><b class="icon icon-paper-plane-o"> Enviar</b></button>
+					</form>
+					<div id="responseMessage"></div>
+				</div><!--Formulario Contato-->
 
 
             </div><!--Box Artigo-->
@@ -256,8 +252,29 @@
     <!-- Counter js -->
     <script type="text/javascript" src="assets/js/counter.js"></script>
     <!-- Ajax contact form  -->
-    <script type="text/javascript" src="assets/js/app.js"></script>
+    <!--<script type="text/javascript" src="assets/js/app.js"></script>-->
     
+	<!--Ajax Mailer-->
+<script>
+$(document).ready(function() {
+    $('#contactForm').on('submit', function(e) {
+        e.preventDefault();
+        
+        $.ajax({
+            url: 'php/contactform.php',
+            type: 'POST',
+            data: $(this).serialize(),
+            success: function(response) {
+                $('#responseMessage').html(response);
+            },
+            error: function(xhr, status, error) {
+                $('#responseMessage').html('Ocorreu um erro ao enviar a mensagem. Tente novamente mais tarde.');
+            }
+        });
+    });
+});
+</script>
+
 	
     <!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
